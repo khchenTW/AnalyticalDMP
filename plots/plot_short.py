@@ -247,9 +247,8 @@ def main():
     if view == 'brief':
         giveMeBrief(datasets, utilization)
     else:
-        plot = plot_datasets(datasets, view, utilization)
-        save_pdf = PdfPages('/home/khchen/Dropbox/figures/'+ ident  + '_' + str(view) + '_' +str(utilization)+ '.pdf')
-        # save_pdf = PdfPages(ident  + '_' + str(view) + '.pdf')
+        plot = plot_datasets(datasets, view, utilization)        
+        save_pdf = PdfPages(ident  + '_' + str(view) + '.pdf')
         save_pdf.savefig(plot, bbox_inches='tight', pad_inches=0.0)
         save_pdf.close()
 
