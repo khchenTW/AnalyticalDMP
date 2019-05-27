@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#the following evaluations are finished already on Serverpc9 with Niklas's account.
-
 # python evaluations.py -i series_kuan -n 10 -s 100 -m 0.05 -f 0.025 -h 1.83 -r -q &
 # sleep 1
 
